@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # 🏁 F1 Race Winner Predictor 🏎️
 
 A Python-based machine learning project that predicts the **winner of an upcoming Formula 1 race** based on historical performance, team stats, qualifying results, and track characteristics.
