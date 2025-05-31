@@ -79,12 +79,13 @@ clean_air_race_pace = {
 # Qualifying data for Spanish GP 2025 (dummy example data)
 qualifying_2025 = pd.DataFrame({
   "Driver": ["PIA", "NOR", "VER", "RUS", "HAM", "ANT", "LEC", "GAS", "HAD", "ALO",
-             "OCO", "SAI", "TSU", "ALB", "LAW", "STR", "COL", "BEA", "HUL", "BOR"],
+             "ALB", "BOR", "LAW", "STR", "BEA", "HUL", "OCO", "SAI", "COL", "TSU"],
   "QualifyingTime (s)": [
     71.546, 71.755, 71.848, 71.848, 72.045, 72.111, 72.131, 72.199, 72.252, 72.284,
-    72.302, 72.401, 72.409, 72.443, 72.477, 72.499, 72.501, 72.899, 72.944, 73.001
+    72.641, 72.756, 72.763, 73.058, 73.315, 73.190, 73.201, 73.203, 73.334, 73.385
   ]
-})
+}
+)
 
 qualifying_2025["CleanAirRacePace (s)"] = qualifying_2025["Driver"].map(clean_air_race_pace)
 
