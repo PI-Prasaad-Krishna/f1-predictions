@@ -173,7 +173,7 @@ def get_weather():
 
 def get_track_adjustments():
     base = {
-        "VER": -0.35,  # slight recovery boost (was -0.3)
+        "VER": -0.45,  # slight recovery boost (was -0.3)
         "NOR": -0.6,
         "PIA": -0.4,
         "RUS": -0.2,
