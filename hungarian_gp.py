@@ -53,15 +53,14 @@ TIRE_DEGRADATION_MODEL = {
 # --- Data Loading Functions ---
 
 def get_qualifying_data_2025():
-    """ Hypothetical qualifying results for the 2025 Hungarian GP. """
     return pd.DataFrame({
         "Driver": [
-            "NOR", "VER", "PIA", "RUS", "LEC", "HAM", "ALO", "TSU", "BEA", "STR",
-            "OCO", "SAI", "GAS", "HAD", "LAW", "HUL", "ALB", "ANT", "COL", "BOR"
+            "LEC", "PIA", "NOR", "RUS", "ALO", "STR", "BEA", "HAM", "BOR", "VER", 
+            "SAI", "LAW", "TSU", "HAD", "GAS", "OCO", "HUL", "COL", "ALB", "ANT"
         ],
         "QualifyingTime (s)": [
-            83.310, 83.385, 83.455, 83.501, 83.562, 83.610, 83.850, 83.991, 84.005, 84.810,
-            84.110, 84.180, 84.250, 84.310, 84.388, 84.451, 84.502, 84.639, 84.801, 84.955
+            75.372, 75.398, 75.413, 75.425, 75.481, 75.498, 75.694, 75.702, 75.725, 75.728, 
+            75.781, 75.821, 75.899, 75.915, 75.966, 76.023, 76.081, 76.159, 76.223, 76.386
         ]
     })
 
