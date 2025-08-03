@@ -55,13 +55,13 @@ TIRE_DEGRADATION_MODEL = {
 def get_qualifying_data_2025():
     return pd.DataFrame({
         "Driver": [
-            "LEC", "PIA", "NOR", "RUS", "ALO", "STR", "BEA", "HAM", "BOR", "VER", 
-            "SAI", "LAW", "TSU", "HAD", "GAS", "OCO", "HUL", "COL", "ALB", "ANT"
-        ],
+            "LEC", "PIA", "NOR", "RUS", "ALO", "STR", "BOR", "VER", "LAW", "HAD", 
+            "BEA", "HAM", "SAI", "COL", "ANT", "TSU", "GAS", "OCO", "HUL", "ALB"
+        ], 
         "QualifyingTime (s)": [
-            75.372, 75.398, 75.413, 75.425, 75.481, 75.498, 75.694, 75.702, 75.725, 75.728, 
-            75.781, 75.821, 75.899, 75.915, 75.966, 76.023, 76.081, 76.159, 76.223, 76.386
-        ]
+            75.372, 75.398, 75.413, 75.425, 75.481, 75.498, 75.725, 75.728, 75.821, 75.915, 
+            75.694, 75.702, 75.781, 76.159, 76.386, 75.899, 75.966, 76.023, 76.081, 76.223
+        ] 
     })
 
 def get_driver_team_map_2025():
