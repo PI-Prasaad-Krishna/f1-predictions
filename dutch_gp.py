@@ -38,13 +38,34 @@ TIRE_DEGRADATION_MODEL = {
 }
 
 def get_qualifying_data_2025():
-    # Mock-up quali data (replace with real)
+    # Data updated with the qualifying results from image_8bfeb7.png
+    # The list is in official P1-P20 qualifying order.
     return pd.DataFrame({
-        "Driver": ["VER","NOR","PIA","LEC","HAM","RUS","ALO","SAI","STR","GAS",
-                   "OCO","LAW","HUL","ALB","BEA","ANT","COL","HAD","BOR","TSU"],
+        "Driver": [
+            "PIA", "NOR", "VER", "HAD", "RUS", "LEC", "HAM", "LAW", "SAI", "ALO", 
+            "ANT", "TSU", "BOR", "GAS", "ALB", "COL", "HUL", "OCO", "BEA", "STR"
+        ],
         "QualifyingTime (s)": [
-            70.201,70.314,70.399,70.425,70.481,70.492,70.521,70.611,70.789,70.844,
-            70.901,70.945,71.002,71.125,71.159,71.224,71.320,71.402,71.498,71.612
+            68.662,  # P1, Q3 Time 
+            68.674,  # P2, Q3 Time 
+            68.925,  # P3, Q3 Time 
+            69.208,  # P4, Q3 Time 
+            69.255,  # P5, Q3 Time 
+            69.340,  # P6, Q3 Time 
+            69.390,  # P7, Q3 Time 
+            69.500,  # P8, Q3 Time 
+            69.505,  # P9, Q3 Time 
+            69.630,  # P10, Q3 Time 
+            69.493,  # P11, Q2 Time 
+            69.622,  # P12, Q2 Time 
+            70.037,  # P13, Q2 Time 
+            69.637,  # P14, Q2 Time 
+            69.652,  # P15, Q2 Time 
+            70.104,  # P16, Q1 Time 
+            70.195,  # P17, Q1 Time 
+            70.197,  # P18, Q1 Time 
+            70.262,  # P19, Q1 Time 
+            70.400   # NC, Assigned a slow time for DNF 
         ]
     })
 
