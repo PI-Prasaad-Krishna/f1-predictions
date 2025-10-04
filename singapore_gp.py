@@ -59,14 +59,32 @@ WET_WEATHER_RATING = {
 }
 
 def get_qualifying_data_2025():
-    """Mock-up quali data for Singapore 2025 (P1-P20 order)"""
     return pd.DataFrame({
-        "Driver": ["LEC","RUS","NOR","VER","HAM","PIA","ALO","SAI","TSU","HUL",
-                   "STR","GAS","ALB","OCO","BEA","LAW","HAD","ANT","COL","BOR"],
+        "Driver": [
+            "RUS", "VER", "PIA", "ANT", "NOR", "HAM", "LEC", "HAD", "BEA", "ALO",
+            "HUL", "ALB", "SAI", "LAW", "TSU", "BOR", "STR", "COL", "OCO", "GAS"
+        ],
         "QualifyingTime (s)": [
-            109.550, 109.610, 109.630, 109.690, 109.750, 109.810, 109.950, 110.010, 
-            110.150, 110.220, 110.310, 110.380, 110.450, 110.550, 110.650, 110.750, 
-            110.850, 110.950, 111.100, 111.250
+            89.158,  # P1, Q3 Time
+            89.340,  # P2, Q3 Time
+            89.524,  # P3, Q3 Time
+            89.537,  # P4, Q3 Time
+            89.586,  # P5, Q3 Time
+            89.688,  # P6, Q3 Time
+            89.784,  # P7, Q3 Time
+            89.846,  # P8, Q3 Time
+            89.868,  # P9, Q3 Time
+            89.955,  # P10, Q3 Time
+            90.141,  # P11, Q2 Time
+            90.202,  # P12, Q2 Time
+            90.235,  # P13, Q2 Time
+            90.320,  # P14, Q2 Time
+            90.353,  # P15, Q2 Time
+            90.620,  # P16, Q1 Time
+            90.945,  # P17, Q1 Time
+            90.982,  # P18, Q1 Time
+            90.989,  # P19, Q1 Time
+            91.261   # P20, Q1 Time
         ]
     })
 
@@ -91,10 +109,6 @@ def get_team_strength():
     return {team: p / max_points for team, p in pts.items()} if max_points > 0 else {team: 0 for team in pts}
 
 def get_historical_pace():
-    """
-    FIX #1: Load Singapore 2024 race data (last year's same track)
-    Since we're in 2025, we can use 2024 Singapore historical data
-    """
     try:
         print(f"[i] Loading historical pace from Singapore 2024...")
         session = fastf1.get_session(2024, RACE_CIRCUIT, "R")
@@ -115,10 +129,6 @@ def get_historical_pace():
         return pd.DataFrame()
 
 def get_practice_pace_2025():
-    """
-    FIX #2: Load Singapore 2025 practice sessions (current year)
-    Using current year's practice data since those sessions have happened
-    """
     try:
         print(f"[i] Loading practice pace from Singapore 2025...")
         all_laps = []
@@ -153,10 +163,6 @@ def get_practice_pace_2025():
         return pd.DataFrame()
 
 def get_similar_track_pace_2025():
-    """
-    FIX #3: Load Monaco 2025 race data
-    Monaco 2025 has already happened, so we can use that data
-    """
     try:
         print(f"[i] Loading similar track pace from Monaco 2025...")
         session = fastf1.get_session(2025, SIMILAR_TRACK_CIRCUIT, "R")
