@@ -111,7 +111,7 @@ def get_driver_track_adjustments():
     return {d: adjustments.get(d,0.0) for d in get_driver_team_map_2025()}
 
 def get_weather_forecast():
-    API_KEY = os.getenv("OWM_KEY","")
+    API_KEY = os.getenv("OWM_KEY","b16eee47fb847ac07fc76bf44805de5b")
     LAT,LON = 45.6156, 9.2811  # Monza
     try:
         url = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}&units=metric"

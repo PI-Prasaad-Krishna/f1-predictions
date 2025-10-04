@@ -1,0 +1,100 @@
+Error processing S o Paulo Grand Prix 2022: The data you are trying to access has not been loaded yet. See `Session.load`
+Processing 2022 Abu Dhabi Grand Prix at abu dhabi...
+Processing 2022 Abu Dhabi Grand Prix...
+core           INFO 	Finished loading data for 20 drivers: ['63', '44', '55', '16', '14', '1', '11', '31', '77', '18', '5', '24', '47', '10', '23', '6', '22', '4', '20', '3']
+core           INFO 	Loading data for Abu Dhabi Grand Prix - Race [v3.5.3]
+req            INFO 	No cached data found for session_info. Loading data...
+_api           INFO 	Fetching session info data...
+logger      WARNING 	Failed to load session info data!
+req            INFO 	No cached data found for driver_info. Loading data...
+_api           INFO 	Fetching driver list...
+core        WARNING 	Failed to load extended driver information!
+logger      WARNING 	Failed to load result data from Ergast!
+core        WARNING 	No result data for this session available on Ergast! (This is expected for recent sessions)
+core        WARNING 	Failed to load driver list and session results!
+req            INFO 	No cached data found for session_status_data. Loading data...
+_api           INFO 	Fetching session status data...
+logger      WARNING 	Failed to load session status data!
+req            INFO 	No cached data found for lap_count. Loading data...
+_api           INFO 	Fetching lap count data...
+logger      WARNING 	Failed to load total lap count!
+req            INFO 	No cached data found for track_status_data. Loading data...
+_api           INFO 	Fetching track status data...
+logger      WARNING 	Failed to load track status data!
+req            INFO 	No cached data found for _extended_timing_data. Loading data...
+_api           INFO 	Fetching timing data...
+logger      WARNING 	Failed to load timing data!
+logger      WARNING 	Failed to add first lap time from Ergast!
+req            INFO 	No cached data found for car_data. Loading data...
+_api           INFO 	Fetching car data...
+logger      WARNING 	Failed to load telemetry data!
+req            INFO 	No cached data found for weather_data. Loading data...
+_api           INFO 	Fetching weather data...
+logger      WARNING 	Failed to load weather data!
+req            INFO 	No cached data found for race_control_messages. Loading data...
+_api           INFO 	Fetching race control messages...
+logger      WARNING 	Failed to load race control messages!
+Error processing Abu Dhabi Grand Prix 2022: The data you are trying to access has not been loaded yet. See `Session.load`
+core           INFO 	Finished loading data for 0 drivers: []
+logger      WARNING 	Failed to load schedule from FastF1 backend!
+req            INFO 	No cached data found for season_schedule. Loading data...
+_api           INFO 	Fetching season schedule...
+logger      WARNING 	Failed to load schedule from F1 API backend!
+Error processing 2023 season: Failed to load any schedule data.
+logger      WARNING 	Failed to load schedule from Ergast API backend!
+logger      WARNING 	Failed to load schedule from FastF1 backend!
+req            INFO 	No cached data found for season_schedule. Loading data...
+_api           INFO 	Fetching season schedule...
+logger      WARNING 	Failed to load schedule from F1 API backend!
+Error processing 2024 season: Failed to load any schedule data.
+logger      WARNING 	Failed to load schedule from Ergast API backend!
+logger      WARNING 	Failed to load schedule from FastF1 backend!
+req            INFO 	No cached data found for season_schedule. Loading data...
+_api           INFO 	Fetching season schedule...
+logger      WARNING 	Failed to load schedule from F1 API backend!
+logger      WARNING 	Failed to load schedule from Ergast API backend!
+Error processing 2025 season: Failed to load any schedule data.
+Collected data for 440 race entries
+d:\F1 predictor (basic)\main.py:334: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  features_df['Last3Avg'].fillna(features_df['FinishPosition'], inplace=True)
+Training prediction model...
+Traceback (most recent call last):
+  File "d:\F1 predictor (basic)\main.py", line 686, in <module>
+    main()
+  File "d:\F1 predictor (basic)\main.py", line 642, in main
+    model = predictor.prepare_features()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\F1 predictor (basic)\main.py", line 374, in prepare_features
+    self.model.fit(X, y)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\pipeline.py", line 662, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\ensemble\_forest.py", line 360, in fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 2961, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 1387, in check_X_y
+    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 1397, in _check_y
+    y = check_array(
+        ^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 1107, in check_array
+    _assert_all_finite(
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 120, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\validation.py", line 169, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input y contains NaN.
