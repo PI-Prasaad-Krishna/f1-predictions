@@ -95,7 +95,7 @@ def get_position_change_spain():
     }
 
 def get_weather():
-    API_KEY = "b16eee47fb847ac07fc76bf44805de5b"
+    API_KEY = ""
     try:
         url = f"https://api.openweathermap.org/data/2.5/forecast?lat=41.57&lon=2.26&appid={API_KEY}&units=metric"
         res = requests.get(url, timeout=10).json()

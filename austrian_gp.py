@@ -155,7 +155,7 @@ def get_team_scores():
     return {team: v / max_pts for team, v in pts.items()}
 
 def get_weather():
-    API_KEY = "b16eee47fb847ac07fc76bf44805de5b"
+    API_KEY = ""
     try:
         url = (
             "https://api.openweathermap.org/data/2.5/forecast?lat=47.2196&lon=14.7646&appid="

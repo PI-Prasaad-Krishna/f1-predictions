@@ -83,7 +83,7 @@ def get_driver_team_map():
     }
 
 def get_weather():
-    API_KEY = "b16eee47fb847ac07fc76bf44805de5b"  # Replace with your own if needed
+    API_KEY = ""  # Replace with your own if needed
     try:
         url = "https://api.openweathermap.org/data/2.5/forecast?lat=45.5017&lon=-73.5673&appid=" + API_KEY + "&units=metric"
         res = requests.get(url, timeout=10).json()

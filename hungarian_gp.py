@@ -156,7 +156,7 @@ def get_weather_forecast():
     """
     Fetches weather from OpenWeatherMap API for the Hungaroring.
     """
-    API_KEY = os.getenv("OWM_KEY", "b16eee47fb847ac07fc76bf44805de5b")
+    API_KEY = os.getenv("OWM_KEY", )
     LAT, LON = 47.5789, 19.2486  # Hungaroring coordinates
     try:
         url = (f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}"

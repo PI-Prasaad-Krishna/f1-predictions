@@ -66,7 +66,7 @@ def get_team_scores():
 # -------------------------- Weather + adjustments ---------------------------
 
 def get_weather():
-    key=os.getenv("OWM_KEY","b16eee47fb847ac07fc76bf44805de5b")
+    key=os.getenv("OWM_KEY",)
     try:
         url=("https://api.openweathermap.org/data/2.5/forecast?lat=50.4372&lon=5.9714"
              f"&appid={key}&units=metric")

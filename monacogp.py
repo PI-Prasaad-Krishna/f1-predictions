@@ -183,7 +183,7 @@ def get_qualifying_data_2025():
 
 def get_weather_data():
     """Get weather data for Monaco (latitude: 43.7384, longitude: 7.4246)"""
-    API_KEY = "b16eee47fb847ac07fc76bf44805de5b"  # Replace with your OpenWeatherMap API key
+    API_KEY = ""  # Replace with your OpenWeatherMap API key
     weather_url = f"http://api.openweathermap.org/data/2.5/forecast?lat=43.7384&lon=7.4246&appid={API_KEY}&units=metric"
     
     try:
